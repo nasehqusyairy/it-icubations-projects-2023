@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            background-image: url(images/A/a/REGISTER/BG\ LOGIN.jpg);
+            background-repeat: no-repeat;
+            
+        }
+        .forum{
+            background-image: linear-gradient(45deg, rgba(137, 133, 133, 0.331), rgba(0, 0, 0, 0.607));
+            position: relative;
+            display: block;
+            margin: auto;
+            width: 400px;
+            height: 420px;
+            margin-top: 10%;
+            border-radius: 10px;
+            justify-content: center;
+        }
+        .tuk-text{
+            padding-left:40px;
+        }
+        
+        label{
+            color: aliceblue;
+            display: block;
+        }
+        input{
+            font-size: medium;
+            outline: none;
+            background: transparent;
+            display: block;
+            border: none;
+            border-bottom: 1px solid white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: antiquewhite;
+        }
+        
+        h1{
+            text-align: center;
+            font-style: initial;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 30px;
+            color: rgb(255, 255, 255);
+        }
+        
+        input[type="submit"]{
+            border:none;
+            margin-top: 0%;
+            padding: 5px;
+            padding: 8px 13px;            
+            font-size: 50%;
+            color: rgb(255, 255, 255);
+            font-family:arial;
+        }
+        h5{
+            font-size:60% ; 
+            text-align: right; 
+            color: rgb(191, 255, 239);
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        input[type="submit"]:hover{
+            background-color: #03e9f4;
+            color: black;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .btn_submit{
+                position: relative;
+                display: inline-block;
+                color: #03e9f4;
+                font-size: 17px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                overflow: hidden;
+
+                margin-top: 20px;
+                margin-left: 40px;
+                letter-spacing: 4px;
+            }
+        .btn_submit:hover{
+                background-color: #01f7ff;
+                color: rgb(49, 55, 124);
+                border-radius: 5px;
+            }
+            .btn_submit span{
+                position: absolute;
+                display: block;
+            }
+            .btn_submit span:nth-child(1){
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100px;
+                background: linear-gradient(90deg, transparent, #01f7ff);
+                animation: btn-anim1 1s linear infinite;
+            }
+            @keyframes btn-anim1 {
+                0%{
+                    left: -100%;
+                }
+                50%,
+                100%{
+                    left: 100%;
+                }
+            }
+            .btn_submit span:nth-child(2){
+                top: -100%;
+                right:0;
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(180deg, transparent, #01f7ff);
+                animation: btn-anim2 1s linear infinite;
+                animation-delay: .25s;
+            }
+            @keyframes btn-anim2{
+                0%{
+                    top:-100%;
+                }
+                50%,
+                100%{
+                    top:100%;
+                }
+            }
+            
+            .btn_submit span:nth-child(3){
+                bottom: 0;
+                right:-100%;
+                width: 100%;
+                height: 100px;
+                background: linear-gradient(270deg, transparent,  #01f7ff);
+                animation: btn-anim3 1s linear infinite;
+                animation-delay: .5s;
+            }
+            @keyframes btn-anim3{
+                0%{
+                    right:-100%;
+                }
+                50%,
+                100%{
+                    right:100%;
+                }
+            }
+            .btn_submit span:nth-child(4){
+                bottom: -100%;
+                left:0;
+                width: 2px;
+                height: 100%;
+                background: linear-gradient(360deg, transparent, #01f7ff);
+                animation: btn-anim4 1s linear infinite;
+                animation-delay: .75s;
+            }
+            @keyframes btn-anim4{
+                0%{
+                    bottom:-100%;
+                }
+                50%,
+                100%{
+                    bottom:100%;
+                }
+            }
+        
+
+    </style>
+</head>
+<body>
+    <a href="index.html">
+    <h3 style="color: aliceblue; padding: 10px 20px;" align="right">HOME</h3></a>
+    <div class="forum">
+        <h1>Masuk</h1>
+        <form action="">
+            <div class="tuk-text" style="padding-top: 20px;">
+                <label for="username" >Username</label>
+                <input type="text" name="username" >
+            </div>
+            <div class="tuk-text" style="padding-top: 20px;">
+                <label for="" >Password</label>
+                <input type="password"  >
+            </div>
+            <a class="btn_submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <input  type="submit" value="M A S U K">
+            </a>
+        </form>
+        <h5>Belum punya Akun?<a href="Daftar.html" style="text-decoration: none;">Daftar</a></h5>
+    </div>
+</body>
+</html>

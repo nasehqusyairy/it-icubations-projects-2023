@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    /* padding-top: 10vh; */
+    font-weight: 300;
+    line-height: 1.5;
+    /* max-width: 60rem; */
+    margin-left: 3%;
+    font-size: 112%;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Outfit', sans-serif;
+    padding-top: 7%;
+}
+
+
+.tabs label {
+    order: 1;
+    display: block;
+    padding: -200px;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+    font-weight: bold;
+    transition: background ease 0.2s;
+    /* border-radius: 10px 10px 0 0; */
+}
+
+.tab {
+   height: 500px;
+    color: aliceblue;
+    padding:0 20px;
+}
+.tab h1{
+    color: aqua;
+}
+.tab p{
+    font-size: 20px;
+}
+
+.tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 10000px;
+    display: none;
+    /* padding: 1rem; */
+    /* background: #ff0000; */
+    border-radius: 0 10px 10px 10px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked+label {
+    background-image: radial-gradient(grey, rgba(0,0,0,0),rgba(0,0,0,0));
+}
+
+.tabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+
+@media (max-width: 45em) {
+
+    .tabs .tab,
+    .tabs label {
+        order: initial;
+    }
+
+    .tabs label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0.2rem;
+    }
+}

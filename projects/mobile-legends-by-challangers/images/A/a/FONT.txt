@@ -1,0 +1,19 @@
+//Layer 1
+Navbar : Felix titling
+Description: Franklin Gothic Book
+Mobile legends : Felix titling 
+
+//Layer 2
+-Title : Franklin Gothic Demi
+- selainnya : Franklin Gothic Book 
+
+//Layer Hero (Head)
+- Title = Franklin Gothic Demi 
+
+//layer item
+-Title : Franklin Gothic Demi
+-Tipe : Javanese text
+
+//layer references
+- "Learn about patch notes" : Franklin Gothic. Heavy
+- deskripsi : Franklin Gothic Book
