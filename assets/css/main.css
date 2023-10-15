@@ -3,6 +3,7 @@ body {
   padding: 3rem 0;
   background: rgb(1, 171, 205);
   background: linear-gradient(45deg, rgba(1, 171, 205, 1) 0%, rgba(244, 91, 83, 1) 100%);
+  background-attachment: fixed;
 }
 
 .card {
